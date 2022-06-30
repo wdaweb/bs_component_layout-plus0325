@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BS_component_layout</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.css'>
+  <style>
+    .navbar.bg-dark {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 導覽列 (navbar) -->
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <!-- logo -->
+        <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+        <!-- 漢堡按鈕 -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item  text-white-50">
+              <a class="nav-link active" aria-current="page" href="#menu">菜單點餐</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nearby">周邊景點</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#map">莊園位置</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#call">聯絡我們</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">咖啡故事</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- 輪播 (Carousel) -->
+  <section>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <!-- 圖片區 -->
+      <div class="carousel-inner" id="menu">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/id/250/1920/1080" class="d-block w-100" alt="coffee-01">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/251/1920/1080?blur=5" class="d-block w-100" alt="coffee-02">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/id/252/1920/1080" class="d-block w-100" alt="coffee-03">
+        </div>
+      </div>
+      <!-- 箭頭 -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  <!-- 卡片 (Cards) -->
+  <section id="menu">
+    <div class="container pb-5">
+      <div class="row  row-cols-md-3 justify-content-between">
+        <div class="col-12 mt-3 mt-sm-5">
+          <div class="card">
+            <img src="https://picsum.photos/id/195/1920/1080" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">COFFEE title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-3 mt-sm-5">
+          <div class="card">
+            <img src="https://picsum.photos/id/196/1920/1080" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">COFFEE title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 mt-3 mt-sm-5">
+          <div class="card">
+            <img src="https://picsum.photos/id/199/1920/1080" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">COFFEE title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 左右卡片 (Cards) -->
+  <section id="nearby">
+    <div class="row bg-light g-0 pt-3 pt-md-0">
+      <div class="col-md-6">
+        <img src="https://picsum.photos/id/292/1920/1080" class="w-100" alt=" ...">
+      </div>
+      <div class="col-md-6 text-center d-flex justify-content-center align-items-center bg-light">
+        <div class="card-body">
+          <h5 class="card-title">CoffeE ShoP</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn bg-success text-light">VIEW COLLECTION</a>
+        </div>
+      </div>
+    </div>
+    <div class="row bg-light g-0 pt-3 pt-md-0">
+      <div class="col-md-6 order-sm-1">
+        <img src="https://picsum.photos/id/894/1920/1080" class="w-100" alt="...">
+      </div>
+      <div class="col-md-6 text-center d-flex justify-content-center align-items-center bg-light">
+        <div class="card-body">
+          <h5 class="card-title">CoffeE ShoP</h5>
+          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+          <a href="#" class="btn bg-success text-light">VIEW COLLECTION</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 地圖 -->
+  <section id="map">
+    <div class="ratio ratio-21x9">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.703649326451!2d121.41951560000001!3d25.044129299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1655291140044!5m2!1szh-TW!2stw"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+  <!-- 表單 -->
+  <section id="call">
+    <div class="container-fluid p-5 bg-light">
+      <div class="container">
+        <div class="row text-center">
+          <h3>聯絡我們</h3>
+          <h5>泰山咖啡莊園，傳承熱情CODEing精神</h5>
+          <p>任何服務問題或建議，歡迎您透過客服表單告知我們。謝謝！</p>
+        </div>
+        <form class="row g-3">
+          <!-- 姓名 -->
+          <div class="col-md-6">
+            <label for="inputtext" class="form-label">姓名</label>
+            <div class="input-group">
+              <input type="text" class="form-control" id="inputtext">
+              <div class="input-group-text">
+                <label class="form-check-label" for="inlineRadio1">先生</label>
+                <input class="form-check-input mt-0 ms-2" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+              </div>
+              <div class="input-group-text">
+                <label class="form-check-label" for="inlineRadio1">小姐</label>
+                <input class="form-check-input mt-0 ms-2" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                  value="option1">
+              </div>
+            </div>
+          </div>
+          <!-- 電話 -->
+          <div class="col-md-6">
+            <label for="inputtel" class="form-label">電話</label>
+            <input type="tel" class="form-control" id="inputtel">
+          </div>
+          <!-- 電子信箱 -->
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">電子信箱</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <!-- 問題類型 -->
+          <div class="col-md-6">
+            <label for="inputState" class="form-label">問題類型</label>
+            <select id="inputState" class="form-select">
+              <option selected>餐廳建議</option>
+              <option>咖啡品項</option>
+              <option>人員素質</option>
+              <option>餐點需求</option>
+            </select>
+          </div>
+          <!-- 意見需求 -->
+          <div class="col-12">
+            <label for="exampleFormControlTextarea1" class="form-label">意見需求</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          <!-- 訂閱泰山莊園最新資訊 -->
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                訂閱泰山莊園最新資訊
+              </label>
+            </div>
+          </div>
+          <!-- 送出 -->
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-secondary">送出</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer id="about">
+    <div class="container-fluid text-light bg-dark">
+      <footer class="container py-5">
+        <div class="row p-3">
+          <div class="col-6 col-md-3 pb-5">
+            <img src="https://picsum.photos/id/755/300/300" class="img-fluid rounded-circle w-50" alt="logo" >
+          </div>
+          
+          <div class="col-6 col-md-3">
+            <h5>Address</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                1234 Street Name City AA 9999
+              </li>
+            </ul>
+          </div>
+      
+          <div class="col-6 col-md-3">
+            <h5>Links</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Website Builder</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Download for Windows</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-light">Download for MAC</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-3">
+            <h5>Contacts</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                Email:support@mobirise.com
+              </li>
+              <li class="nav-item mb-2">
+                Phone: +1 (0) 000 0000 001
+              </li>
+              <li class="nav-item mb-2">
+                Fax: +1(0) 000 0000 002
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p class="text-center text-light pt-5">
+          &copy; 2021 Company, Inc- All Rights Reserved
+        </p>
+      </footer>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js'></script>
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.js'></script> -->
+</body>
+
+</html>
